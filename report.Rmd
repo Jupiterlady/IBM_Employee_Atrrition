@@ -3,15 +3,15 @@ title: "Machine Learning 1 - Assignment"
 author: "Annalena Kreischer, Ansam Zedan & Mélanie Bigler"
 date: "HS23"
 output: 
+  pdf_document:
+    toc: yes
+    toc_depth: '2'
   html_document:
     toc: yes
     toc_depth: 2
     toc_float:
     number_sections: yes
     code_folding: hide
-  pdf_document:
-    toc: yes
-    toc_depth: '2'
 ---
 
 ```{r setup, include = FALSE, warning = FALSE}
