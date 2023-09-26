@@ -32,19 +32,27 @@ add in the end
 
 # Introduction (Annalena)
 
-## Motivation (Annalena)
+In the dynamic landscape of today's workforce, the workplace faces ongoing challenges. One of these challenges affecting organizations worldwide is employee turnover, commonly referred to as job attrition (Srivastava & Nair, 2017[^ref6]). In this project, we delve into this topic and explore how machine learning can serve as a powerful tool to gain insights and predict attrition. 
 
-what is the motivation
+The subject of job attrition is important, as it has substantial implications for businesses and employees. Of course, it is impossible to prevent the turnovers completely, however, high attrition rates have tremendous consequences. On site of the organizations, attrition incurs various costs, including expenses for recruiting new hires, onboarding and training, as well as the loss of knowledge and experience, thus decreasing productivity (Srivastava & Nair, 2017[^ref6]). Furthermore, high turnover rates can adversely affect the workplace culture and the employee’s morale, affecting their job satisfaction, productivity, and the overall work environment (Karumuri & Singareddi, 2014[^ref2]). On site of the employees leaving, attrition can provide new opportunities, but it can also imply negative consequences. For example, it can lead to financial instability, especially if they are unable to secure new employment quickly. Job attrition often results in the loss of valuable benefits such as health insurance, retirement contributions, and paid time off (Mitchell, 1983[^ref4]). Due to the stress on individuals and their families, attrition can strain personal relationships, especially if they must invest considerable time and effort in the job search (Larson et al., 1994[^ref3]). In summary, addressing attrition and how to prevent it is crucial for both employees and organizations.
 
-## Goal
+In general, there is a variety of potential causes for attrition. Employees might leave due to dissatisfaction with their current roles, a toxic or stressful workplace, an imbalance between work and personal life or poor leadership to give a few examples (Karumuri & Singareddi, 2014[^ref2]). However, it is crucial to identify the reasons emerging in specific companies as there might also be hidden causes and to predict the attrition. For this, a data-driven approach is helpful as it can empower the company to make evidence-based decisions instead of relying on anecdotes and assumptions. For example, data-driven insights can enable personalized retention strategies as interventions can be designed to address specific issues different employee groups may be facing. For example, organization might increase the salary, provide more traveling opportunities or offer job related or leadership trainings (Karumuri & Singareddi, 2014[^ref2]; Srivastava & Nair, 2017[^ref6]). Forecasting attrition risk for individual employees or groups thus enables the company to take preventive measures. In this project, we are leveraging a data-driven approach to gain a comprehensive understanding of job attrition at the example of the company IBM (International Business Machines Corporation). The fictious dataset is described hereafter.
 
-what is the outcome?
+## The dataset
 
-## Data source
+IBM is a global technology and consulting company. It is at the forefront of technological advancement and is known as a leader in providing cutting-edge solutions to businesses and industries worldwide (About IBM, 2023[^ref1]). Despite its success, IBM is not immune to the challenges of job attrition that many organizations face. The dataset used for this project (pavansubhash, 2017[^ref5]) contains comprehensive information about the employees, capturing various aspects of their work lives. This includes personal details such as age and gender, professional specifics like job level and role, and factors that can influence employee satisfaction such as working hours, distance home-job, overtime, business travel, and compensation. Furthermore, the dataset also includes information related to performance indicators, such as satisfaction with the work environment, advancement opportunities and historical employment data (such as years at the company and past promotions). It thus provides a broad foundation for analyzing job attrition and other aspects of employee behavior in a corporate context.
 
-The data was used from this source:
+While it's important to note that this dataset is a creation of IBM data scientists and not a representation of real-world employee data, it remains a valuable resource for several reasons. Firstly, this dataset serves as a teaching and learning tool. It allows us to practice our skills in data analysis, modeling, and interpretation. Secondly, the dataset provides a foundation for systematically comparing and evaluating different machine learning models and analytical techniques. Lastly, the dataset offers a safe space for exploring sensitive workforce-related issues without compromising organizational confidentiality. It enables us to investigate attrition patterns, identify potential drivers, and propose strategies for retention without accessing real employee data, which may involve ethical and legal considerations. In summary, while this dataset is fictional, it serves as a valuable and controlled resource for learning, research, and model development in the critical domain of employee attrition. It allows us to gain insights, experiment with different methodologies, and develop solutions without compromising the privacy or confidentiality of real individuals or organizations.
 
-<https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset>
+## Motivation And Goal
+
+Our motivation is to identify patterns, correlations, and influencing factors to predict attrition through the application of machine learning techniques. The challenge lies in selecting the right features to make accurate predictions and to disentangle combinations of factors. The higher goal is to enable companies having similar data to take preventive measures to retain employees before they decide to leave. The importance to do so has been outlined above. Predicting models allow for tailoring such strategies according to the needs of the respective organizations. Overall, we are motivated to make a practical contribution to solving a real-world issue in the workplace that could benefit companies and employees.
+
+## The Structure of Our Project
+
+Our goal is to develop a model capable of identifying employees at risk of leaving the company early. Initially, we will examine the dataset and perform exploratory data analysis. This will enable us to understand the fundamental characteristics of the data and gain initial insights into potential correlations between various features and attrition.
+Subsequently, we will apply different machine learning models to predict attrition, aligning with our course curriculum. Through this approach, we not only to gain proficiency in applying diverse machine learning techniques, but also systematically test different models on the same dataset, allowing for comparisons and for identifying the best fitting model. We begin with a foundational Linear Model, providing insights into regression techniques for initial attrition prediction. Subsequently, we delve into the Generalised Linear Model with the Poisson family before introducing the Generalised Linear Model with the Binomial family, essential for binary classification tasks such as attrition prediction. Afterwards, we explore the Generalised Additive Model, expanding our toolkit with non-linear modeling capabilities and more nuanced insights into attrition. We then apply Neural Networks, harnessing the power of deep learning to uncover patterns, and then we dive into Support Vector Machines (SVM), a powerful tool for both linear and non-linear classification. Lastly, we tackle the solution to an optimization problem, leveraging mathematical techniques to enhance our attrition prediction models. Our project culminates with a comprehensive comparative analysis. We evaluate the performance of each model and discuss their respective strengths and weaknesses, specifically concerning their practical applicability in addressing job attrition challenges.
+In the final phase, based on our findings and models, we will formulate recommendations for employee retention. These recommendations are intended to assist IBM and other companies in taking preventive measures to reduce attrition.
 
 # Data Preperation (Melanie)
 
@@ -109,3 +117,17 @@ What is data showing? Make some first easy visualizations
 # Conclusion (Melanie)
 
 ## Learnings & Outlook (Ansam)
+
+
+[^ref1] About IBM. (2023, September 26). https://www.ibm.com/about?lnk=fab
+
+[^ref2] Karumuri, V., & Singareddi, S. S. (2014). Employee attrition and retention: A theoretical perspective. Asia Pacific Journal of Research. https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=8a8ba9c73f3e624032e71c31a3cbf1a94f935905
+
+[^ref3] Larson, J. H., Wilson, S. M., & Beley, R. (1994). The Impact of Job Insecurity on Marital and Family Relationships. Family Relations, 43(2), 138. https://doi.org/10.2307/585315
+
+[^ref4] Mitchell, O. S. (1983). Fringe Benefits and the Cost of Changing Jobs. ILR Review, 37(1), 70–78. https://doi.org/10.1177/001979398303700105
+
+[^ref5] pavansubhash. (2017). IBM HR Analytics Employee Attrition & Performance [Dataset]. https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
+
+[^ref6] Srivastava, D. K., & Nair, P. (2017). Employee Attrition Analysis Using Predictive Techniques. In S. C. Satapathy & A. Joshi (Eds.), Smart Innovation, Systems and Technologies Ser: v.83. Information and Communication Technology for Intelligent Systems (ICTIS 2017) - Volume 1 (Vol. 83, pp. 293–300). Springer International Publishing. https://doi.org/10.1007/978-3-319-63673-3_35
+
